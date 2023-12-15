@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Kalnia&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        /* body {
+            height:20vh;
+        } */
+
+        .first {
+            display: flex;
+        }
+
+        .dropbtn {
+            color: black;
+            padding: 16px;
+            font-size: 18px;
+            border: none;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 0px;
+            width: 100%;
+        }
+
+        .dropdown {
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown div:nth-child(1) {
+            padding: 0px 15px;
+        }
+
+        .dropdown div:nth-child(2) {
+            padding: 10px 15px;
+            font-size: 18px;
+            font-family: bold;
+
+        }
+
+        .dropdown div:nth-child(3) {
+            padding: 10px 15px;
+
+        }
+
+        .dropdown div:nth-child(4) {
+            padding: 10px 15px;
+
+        }
+
+        .dropdown div select {
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .second {
+            padding: 10px 15px;
+        }
+
+
+        @media (max-width:800px) {
+
+            .Bold,
+            .second,
+            .Block {
+                display: none;
+            }
+
+
+        }
+
+        .section {
+            background-image: url("https://souravsaraf2000.github.io/The-Vegan-Store/images/landing-background.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            opacity: 0.9;
+
+
+            height: 600px;
+
+        }
+
+        body {
+            height: 680vh;
+
+        }
+
+        .h1 {
+            text-align: center;
+            position: relative;
+            top: 180px;
+        }
+
+        .h2 {
+            font-size: 50px;
+            font-weight: bold;
+            padding-bottom: 40px;
+            color: black;
+            font-family: sans-serif;
+        }
+
+        .h3 {
+            padding-top: 15px;
+            color: #8b8b99;
+            font-family: sans-serif;
+            opacity: 0.8;
+        }
+
+        .Good {
+            display: flex;
+            width: 100%;
+            height: 600px;
+            text-align: center;
+        }
+
+        .Good>div {
+            width: 100%;
+            height: 600px;
+        }
+
+        .Good div:nth-child(1) {
+            background-color: #5acda6;
+            padding: 90px 20px;
+        }
+
+        .Good div:nth-child(2) {
+            background-color: #91ac41;
+            padding: 90px 20px;
+        }
+
+        .Good div:nth-child(3) {
+            background-color: #e4b476;
+            padding: 90px 20px;
+        }
+
+        .Good div:nth-child(4) {
+            background-color: #f69dad;
+            padding: 90px 20px;
+        }
+
+
+        .Good11 h3 {
+            font-size: 16px;
+            padding: 25px 10px;
+            color: white;
+        }
+
+        .Good12 h3 {
+            font-size: 16px;
+            padding: 38px 10px;
+            color: white;
+        }
+
+        .Good13 h3 {
+            font-size: 16px;
+            padding: 25px 10px;
+            color: white;
+        }
+
+        .Good14 h3 {
+            font-size: 16px;
+            padding: 25px 10px;
+            color: white;
+        }
+
+        .Good11 h2 {
+            font-size: 25px;
+            padding: 20px 10px;
+            color: white;
+            font-family: 'Kalnia', serif;
+        }
+
+        .Good12 h2 {
+            padding-top: 30px;
+            color: white;
+            font-family: 'Kalnia', serif;
+        }
+
+        .Good13 h2 {
+            padding-top: 30px;
+            color: white;
+            font-family: 'Kalnia', serif;
+        }
+
+        .Good14 h2 {
+            padding-top: 30px;
+            color: white;
+            font-family: 'Kalnia', serif;
+        }
+
+        .Good11 img:hover {
+            animation: Hoo 2s ease-in;
+        }
+
+        @keyframes Hoo {
+            0% {
+                background-color: white;
+                transform: scale(1.2);
+                border-radius: 60%;
+            }
+
+            25% {
+                background-color: violet;
+                border-radius: 60%;
+            }
+
+            100% {
+                background-color: orangered;
+                border-radius: 60%;
+
+            }
+        }
+
+        .Good12 img:hover {
+            animation: Hoo 2s ease-in;
+        }
+
+        @keyframes Hoo {
+            0% {
+                background-color: white;
+                transform: scale(1.2);
+                border-radius: 60%;
+            }
+
+            25% {
+                background-color: violet;
+                border-radius: 60%;
+            }
+
+            100% {
+                background-color: orangered;
+                border-radius: 60%;
+
+            }
+        }
+
+        .Good13 img:hover {
+            animation: Hoo 2s ease-in;
+            width: 50px;
+            height: 60px;
+
+        }
+
+        @keyframes Hoo {
+            0% {
+                background-color: white;
+                transform: scale(1.2);
+                border-radius: 60%;
+
+            }
+
+            25% {
+                background-color: violet;
+                border-radius: 60%;
+            }
+
+            100% {
+                background-color: orangered;
+                border-radius: 60%;
+
+            }
+        }
+
+        .Good14 img:hover {
+            animation: Hoo 2s ease-in;
+        }
+
+        @keyframes Hoo {
+            0% {
+                background-color: white;
+                transform: scale(1.2);
+                border-radius: 60%;
+            }
+
+            25% {
+                background-color: violet;
+                border-radius: 60%;
+            }
+
+            100% {
+                background-color: orangered;
+                border-radius: 60%;
+
+            }
+        }
+
+        .nextsection4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tum img {
+            background-color: #e3b375;
+            border-radius: 50%;
+            padding: 20px 10px;
+        }
+
+        .first8,
+        .second,
+        .third,
+        .fourth {
+            text-align: center;
+        }
+
+        .nextsection1 {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .nextsection4 {
+            padding-top: 55px;
+            display: flex;
+
+            width: 70%;
+            margin: auto auto;
+        }
+
+        .nextsection {
+            background-color: #f7eee2;
+            height: 750px;
+        }
+
+        .tum {
+            padding: 50px;
+
+            border-radius: 50%;
+        }
+
+        @media(max-width:700px) {
+
+            .nextsection {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                top: 1800px;
+                background-color: #f7eee2;
+                height: 320vh;
+            }
+
+            .nextsection4 {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                bottom: 60px;
+            }
+
+            .Good {
+                display: block;
+            }
+        }
+
+        .going {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .going1,
+        .going3 {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .going3 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .going3>div {
+            width: 30%;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            height: 400px;
+        }
+
+        .Poo,
+        .Poo1,
+        .Poo2 {
+            max-width: 100%;
+            height: auto;
+            width: 40%;
+            max-height: 200px;
+            border-radius: 60%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .poo1 {
+            border: 3px solid green;
+        }
+       
+
+        @media (max-width: 800px) {
+
+            .going1,
+            .going3 {
+                text-align: center;
+            }
+
+            .going3,
+            .going3>div {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .going3>div {
+                width: 100%;
+            }
+
+            .going {
+                position: relative;
+                top: 1795px;
+            }
+
+            .flex1 {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                position: relative;
+                top: 1780px;
+
+            }
+
+            .flex2 {
+                width: 100%;
+            }
+
+            .flex3 {
+                width: 100%;
+            }
+
+            .rating {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                top:1790px;
+                height: 200vh;
+            }
+
+            .Video {
+                position: relative;
+                top: 1790px;
+                width: 100%;
+                height: 100vh;
+            }
+
+            .Video h1 {
+                padding: 20px;
+            }
+
+            #section-8 {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                top: 2100px;
+
+             width: 100%;
+                max-width: 100%;
+            }
+
+            #info,
+            #form {
+                flex: 1;
+                max-width: 100%;
+                padding: 20px;
+            }
+
+            footer {
+                position: relative;
+               top:1900px;
+            }
+        }
+      
+
+        .flex1 {
+            display: flex;
+        }
+
+        .flex2 {
+            height: 500px;
+            width: 100%;
+            background-image: url("https://images.unsplash.com/photo-1616515998334-5f157710a178?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.8;
+        }
+
+        .flex3 {
+            height: 500px;
+            width: 100%;
+            background-image: url("https://images.unsplash.com/photo-1542691457-cbe4df041eb2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.8;
+        }
+
+        .rating {
+            display: flex;
+            padding-top: 80px;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #f6fcfa;
+            padding-bottom: 20px;
+        }
+
+        .Video {
+            text-align: center;
+        }
+
+        .Video h1 {
+            padding: 40px 60px;
+            font-size: 60px;
+            color: green;
+        }
+
+        .Video video {
+            width: 100%;
+            max-width: 100%;
+            height: 500px;
+        }
+
+
+        #section-8 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 160px;
+        }
+
+        #info,
+        #form {
+            flex: 1;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .head-style {
+            font-size: 30px;
+            color: green;
+        }
+
+        h1 {
+            font-size: 45px;
+            padding-top: 15px;
+        }
+
+        .p-style {
+            color: gray;
+            padding-top: 20px;
+        }
+
+        #desc {
+            font-size: 20px;
+            padding-top: 15px;
+        }
+
+
+        footer {
+            text-align: center;
+            margin-top: 230px;
+            background-color: #232323;
+            color: white;
+            padding: 30px;
+            font-size: 14px;
+        }
+        .flex4{
+            text-align: center;
+        }
+        .input1{
+            padding: 20px 90px;
+            border: 1px solid black;
+        }
+        .input2{
+            padding: 18px 50px;
+            position: relative;
+            right: 97px;
+            top: 20px;
+            background-color: red;
+            font-weight: bold;
+            opacity: 0.8;
+        }
+     input::placeholder, textarea::placeholder {
+    font-weight: bold;
+    font-size: 15px;
+}   
+.button5:hover{
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;}
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <div>
+            <img src="https://souravsaraf2000.github.io/The-Vegan-Store/images/logo1.jpg" width="80px" height="55px"
+                style="position: relative;padding-left: 30px;" alt="logo">
+        </div>
+        <div class="dropdown">
+            <div class="second">
+                <button class="dropbtn">Demo Pages</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+            <div class="Bold">
+                <b>Watch Videos</b>
+            </div>
+            <div class="Block">
+                <select>
+                    <option disabled selected value> Blocks </option>
+
+                </select>
+            </div>
+            <div class="button5">
+                <button
+                    style="padding: 10px 35px; background-color: #aad236;; border-radius: 5px;border-color: white;color:white;"><b>BUY
+                        NOW</b></button>
+            </div>
+
+        </div>
+    </div>
+
+    <main>
+
+        <section class="section">
+            <div class="h1">
+                <h1 class="h2">
+                    Vegan Store Simple Website Template
+                </h1>
+                <h4 class="h3"
+                    style="font-size:15px;word-spacing: 6px;text-align: center;width: 86%;position:relative;padding-left: 180px;">
+                    With nutrition, all the vital functions of body are connected. It is the source of development of
+                    tissues and cells, their constant renewal, the saturation of man with energy.</h4>
+            </div>
+        </section>
+    </main>
+
+
+    <div class='Good'>
+        <div class="Good11">
+            <img src="cut.png" style="width: 120px;height: 130px;">
+
+            <h2>Step.01</h2>
+            <h3>Vegetables are an integral part of the human diet. They are extremely useful because of the high content
+                of
+                carbohydrates, various acids, vitamins and active elements in the form, easy for digestion.</h3>
+        </div>
+        <div class="Good12">
+            <img src="paint-brush.png" style="width: 120px;height: 130px;">
+
+            <h2>Step.02</h2>
+            <h3>Fresh tomatoes are ideal for replenishing the loss of minerals. These vegetables contain a lot of acids
+                that our body needs for full-fledged work.</h3>
+        </div>
+        <div class="Good13">
+            <img src="shopping-basket.png" style="width: 120px;height: 130px;">
+
+            <h2>Step.03</h2>
+            <h3>In the content of vitamin C, sweet peppers are superior to lemons and even black currants! The greatest
+                amount of vitamin is contained around the stalk, that is, in the part of the product that is usually cut
+                during cleaning.</h3>
+        </div>
+        <div class="Good14">
+            <img src="smily.png" style="width: 120px;height: 130px;">
+
+            <h2>Step.04</h2>
+            <h3>If you sometimes eat hot chili peppers, this will help normalize cerebral circulation, ease the
+                condition with bronchial asthma, cough, sore throat, flu.</h3>
+        </div>
+    </div>
+
+
+    <div class="nextsection">
+        <div class="nextsection1">
+            <h2 class="nextsection2" style="color:#aad236;font-family: 'Hedvig Letters Serif', serif;">
+                Fresh Food
+            </h2>
+            <h1 class="nextsection2" style="color:black;font-size: 60px;font-family: 'Nunito', sans-serif;">Our Vegan
+                Store!
+            </h1>
+            <h4 class="nextsection2" style="color: olive;font-size: 30px;word-spacing: 10px;padding-top: 10px;">Radish
+                contains a lot of
+                fiber, pectin and mineral salts.</h4>
+        </div>
+
+        <div class="nextsection4">
+            <div class="first8">
+                <div class="tum">
+                    <img width="100px" height="120px" src="photo-camera_711191.png" class="pic1">
+                </div>
+
+                <div>
+                    <h2 class="Quick" style="color: black;font-family: 'Hedvig Letters Serif', serif;">
+                        Fresh Vegetables</h2>
+                    <h3 class="text" style="color: #8b8b99;padding-top: 15px;font-size: 15px;">
+                        Use for cooking several types of vegetable oil.
+                    </h3>
+                </div>
+
+
+
+            </div>
+            <div class="second">
+                <div class="tum">
+                    <img src="shuttle_2285551.png" width="100px" height="120px" class="pic1">
+
+                </div>
+
+                <div>
+                    <h2 class="Quick" style="color: black;font-family: 'Hedvig Letters Serif', serif;">
+                        High Quality
+                    </h2>
+                    <h3 class="text" style="color: #8b8b99;padding-top: 15px;font-size: 15px;">
+                        This is the best source of essential fatty acids for the body.
+                    </h3>
+                </div>
+
+
+
+            </div>
+            <div class="third">
+                <div class="tum"> <img src="twitter-logo_2238.png" width="100px" height="120px" class="pic1">
+                </div>
+                <div>
+                    <h2 class="Quick" style="color: black;font-family: 'Hedvig Letters Serif', serif;">
+                        Sale Department
+                    </h2>
+                    <h3 class="text" style="color: #8b8b99;padding-top: 15px;font-size: 15px;">
+                        It is very good, if in the kitchen there will always be several bottles with different oils.
+                    </h3>
+
+                </div>
+            </div>
+            <div class="fourth">
+
+                <div class="tum"> <img src="icons8-wechat-50.png" width="100px" height="120px" class="pic1">
+                </div>
+                <div>
+                    <h2 class="Quick" style="color: black;font-family: 'Hedvig Letters Serif', serif;">
+                        Best&nbsp;- &nbsp;Price
+                    </h2>
+                    <h3 class="text" style="color: #8b8b99;padding-top: 15px;font-size: 15px;"> Remember that unrefined
+                        oils are not suitable for heat treatment.</h3>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="going">
+        <div class="going1">
+            <h3 style="color:#aad236;font-size:30px;font-family: 'Nunito', sans-serif;">Fresh Food</h3>
+            <h1 style="font-family: 'Oswald', sans-serif;letter-spacing:12px;word-spacing: 12px;">Our Vegan Shop!</h1>
+
+
+            <p class="Para"
+                style="font-family: 'Hedvig Letters Serif', serif;padding-top: 20px;color: #8b8b99;font-weight: bold;">
+                According to experts, any habit can be formed in 21 days. The same statement</p>
+            <p class="Para"
+                style="font-family: 'Hedvig Letters Serif', serif;padding-top: 20px;color: #8b8b99;font-weight: bold;">
+                applies to healthy eating.</p>
+        </div>
+        <div class="going3">
+
+            <div>
+                <img src="pexels-justin-shaifer-1222271.jpg" class="Poo">
+
+                <p style="color: #8b8b99;font-weight: bold;font-family: 'Montserrat', sans-serif;"><br>consultants are
+                    very polite.Many of the products have tried and are ready to prompt and recommend
+                    to customers. The staff shows that they completely share the philosophy of proper nutrition, if you
+                    can say so.</p>
+                <h2 style="padding-top: 20px;">VERONICA KING</h2>
+                <h4 style="color: #8b8b99;font-weight: bold;padding-top: 40px;">Cook</h4>
+            </div>
+
+
+
+            <div>
+                <img src="https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/rZJIMvhmliwmde8a6/videoblocks-playful-afro-american-businessman-close-up-happy-cheerful-black-man-in-business-suit-on-blurred-background-smiling-face-of-dark-skinned-guy_bqxtve6qzq_thumbnail-1080_01.png"
+                    class="Poo1" style="height: 140px;">
+
+                <p style="color: #8b8b99;font-weight: bold;font-family: 'Montserrat', sans-serif;"><br>The assortment is
+                    very wide. From useful organic oils, cereals and teas to specific products for
+                    vegetarians, such as sausages and pies without meat.</p>
+                <h2 style="padding-top: 20px;"> JIM CASH</h2>
+                <h4 style="color: #8b8b99;font-weight: bold;padding-top:30px;">Seller</h4>
+            </div>
+
+            <div>
+                <img src="pexels-oleksandr-p-1172207.jpg" class="Poo2">
+
+                <p style="color: #8b8b99;font-weight: bold;font-family: 'Montserrat', sans-serif;"><br>I want to say a
+                    huge thank you to the management of the store and all its employees, I'm not a
+                    vegetarian, it would seem that the store is not for me, but it's not so, any person who comes here
+                    will find something useful.</p>
+                <h2 style="padding-top: 30px;">PETER GOODMAN</h2>
+                <h4 style="color: #8b8b99;font-weight: bold;padding-top: 30px;">Manager</h4>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="flex1">
+        <div class="flex2"></div>
+        <div class="flex3">
+            <div class="flex4">
+                <h1 style="font-size: 60px;color: green;text-align: center;">Follow Us</h1>
+                <br>
+                <br>
+                <h3 style="font-size:25px;color: black;text-align: center;color:#8b8b99;font-weight: bold;">A wide range of products; many unusual and tasty products;
+                    courteous staff.</h3>
+                <br>
+                <br>
+                <input type="email" placeholder="Enter your Email Id" class="input1" style="text-align: left;">
+                <br>
+                <input type="submit" class="input2">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="rating">
+        <div>
+            <h2 style="text-align:center; font-size: 60px;">7</h2>
+            <p style="color: green;padding-top: 10px;">Years of experience</p>
+        </div>
+        <div>
+            <h2 style="text-align:center; font-size: 60px;">123k</h2>
+            <p style="color: green;padding-top: 10px;">Happy Customers</p>
+        </div>
+        <div>
+            <h2 style="text-align:center; font-size: 60px;">72k</h2>
+            <p style="color: green;padding-top: 10px;">100% Satisfaction</p>
+        </div>
+        <div>
+            <h2 style="text-align:center; font-size: 60px;">13k</h2>
+            <p style="color: green;padding-top: 10px;">Detox Smoothies</p>
+        </div>
+    </div>
+
+    <div class="Video">
+        <div style="padding-top: 60px;">
+            <h1 style="text-align: center;padding: 40px 60px;font-size: 60px;color: #8b8b99;font-family: 'Roboto Slab', serif;">Vimeo Video </h1>
+        </div>
+        <div>
+            <video src="food_-_24999 (720p).mp4" controls></video>
+        </div>
+    </div>
+
+
+    <div id="section-8" style="display: flex; flex-wrap: wrap; justify-content: space-around; padding-left: 50px;">
+        <div id="info" style="flex: 1; max-width: 800px; padding: 20px;">
+            <p class="head-style" style="font-size: 30px; color: #aad236;">Contact Us</p>
+            <h1 style="font-size: 45px; padding-top: 15px;padding-top:30px;">Address Information</h1>
+            <p class="p-style" style="color: gray; padding-top: 20px;font-family: 'Hedvig Letters Serif', serif;">Overeating is one of the most common causes of
+                overweight and digestive problems.</p>
+            <div id="desc" style="font-size: 20px; padding-top: 15px;">
+                <h2 style="color: red; font-size: 30px;padding-top:30px;">London Store</h2>
+                <p class="p-style" style="padding-top:25px;color: gray;font-family: 'Hedvig Letters Serif', serif;">Roeterseiland Campus Building E <br>6th floor
+                    London <br> Monday to Friday : 9am to 8pm <br>examplemail.mail.combr <br></p>
+                <h2 style="font-size: 30px; padding-top: 20px; color: red;padding-top:30px;">Berlin Store</h2>
+                <p class="p-style" style="padding-top: 20px;color: gray;font-family: 'Hedvig Letters Serif', serif;">Roeterseiland Campus Building E <br>6th floor
+                    London <br> Monday to Friday : 9am to 8pm <br>examplemail.mail.combr <br></p>
+            </div>
+        </div>
+
+        <div id="form" style="flex: 1; max-width: 800px; padding: 20px;">
+            <p class="head-style" style="font-size: 30px; color: #aad236;">Meet Our Team</p>
+            <h1 style="font-size: 45px; padding-top: 15px;">Get In Touch</h1>
+            <p class="p-style" style="color: gray; padding-top: 20px;font-size: 18px;font-family: 'Hedvig Letters Serif', serif;">The task of proper nutrition - to remove from the
+                diet harmful food and enrich it useful.</p>
+            <form action="/index.html" style="font-size: 18px;" method="post">
+                <div style="padding-top: 20px;">
+                    <input type="text" name="name" id="name" placeholder="Name"
+                        style="padding:20px 35px; border:1px solid gray; width:58%;border-radius: 5px;">
+                </div>
+                <div style="padding-top: 20px;">
+                    <input type="number" name="phone" id="phone" placeholder="Phone"
+                    style="padding:20px 35px; border:1px solid gray; width:58%;border-radius: 5px;">
+                </div>
+                <div style="padding-top: 20px;">
+                    <input type="text" name="subject" id="subject" placeholder="Subject"
+                    style="padding:20px 35px; border:1px solid gray; width:58%;border-radius: 5px;">
+                </div>
+                <div style="padding-top: 20px;">
+                    <input type="email" name="email" id="email" placeholder="Email"
+                    style="padding:20px 35px; border:1px solid gray; width:58%;border-radius: 5px;">
+                </div>
+                <div style="padding-top: 20px;">
+                    <textarea name="message" id="message" cols="20" rows="5" placeholder="Message"
+                    style="padding:15px 35px; border:1px solid gray; width:58%;border-radius: 5px;"></textarea>
+                </div>
+                <div style="padding-top: 20px;">
+                    <button type="submit" class="button15"
+                        style="color: white; background-color:#aad236; padding:18px 35px; border: none; border-radius:5px; width:28%;font-size:16px;">
+                       <b> SUBMIT NOW</b> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <i class="far fa-copyright" aria-hidden="true"></i> Copyright 2021 Mobirise - All Rights Reserved
+        </p>
+    </footer>
+
+</body>
+
+</html>
